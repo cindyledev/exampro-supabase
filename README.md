@@ -37,7 +37,7 @@ cd exampro-supabase
 1. Install TailwindCSS, its peer-dependencies, plugins, and other Tailwind Labs tools
 
 ```bash
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest @tailwindcss/forms
 ```
 
 ```bash
@@ -80,7 +80,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/forms')],
 };
 ```
 

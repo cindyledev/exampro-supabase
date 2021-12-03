@@ -34,13 +34,12 @@ export default function Header() {
         <div className="hidden md:block text-right">
           <span className="flex items-center">
             <button type="button" className="flex-shrink-0">
-              <a
-                href="#"
-                className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-orange-500 bg-white hover:bg-gray-100 focus:outline-none"
-              >
-                <LockClosedIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
-                Sign In
-              </a>
+              <Link href="/auth">
+                <a className="relative inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-orange-500 bg-white hover:bg-gray-100 focus:outline-none">
+                  <LockClosedIcon className="-ml-1 mr-2 h-5 w-5" aria-hidden="true" />
+                  Sign In
+                </a>
+              </Link>
             </button>
             <button type="button" className="md:ml-4 md:flex-shrink-0">
               <a
@@ -88,9 +87,11 @@ export default function Header() {
                 <a href="#">Get Started</a>
               </button>
             </div>
-            <button className="block w-full px-5 py-3 text-center font-medium text-orange-500 bg-gray-50 hover:bg-gray-100">
-              <a href="#">Sign In</a>
-            </button>
+            <Link href="/auth">
+              <button className="block w-full px-5 py-3 text-center font-medium text-orange-500 bg-gray-50 hover:bg-gray-100">
+                <a>Sign In</a>
+              </button>
+            </Link>
           </div>
         </Popover.Panel>
       </Transition>
