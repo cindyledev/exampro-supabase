@@ -1,4 +1,4 @@
-# ExamPro Prisma
+# ExamPro Supabase
 
 This is part of the [ExamPro](https://www.exampro.co/) Next.js course.
 
